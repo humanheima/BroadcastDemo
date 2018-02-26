@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.brotherd.broadcastdemo">
+    package="com.brotherd.broadcastdemo">
 
     <application
         android:allowBackup="true"
@@ -11,20 +11,22 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-       <!-- <receiver
+        <!--<receiver
             android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true">
-            <intent-filter>
-                <action android:name="com.brotherd.broadcastdemo.BROADCAST"/>
+            &lt;!&ndash;指定优先级&ndash;&gt;
+            <intent-filter android:priority="100">
+                <action android:name="com.brotherd.broadcastdemo.BROADCAST" />
             </intent-filter>
         </receiver>-->
+
     </application>
 
 </manifest>

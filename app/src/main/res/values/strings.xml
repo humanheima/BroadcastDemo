@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BroadcastDemo</string>
+    <string name="send_broadcast">发送自定义广播</string>
 </resources>

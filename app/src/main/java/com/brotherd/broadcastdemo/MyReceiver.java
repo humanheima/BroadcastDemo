@@ -12,9 +12,15 @@ public class MyReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        //处理具体的逻辑
-        Log.d(TAG, "onReceive: ");
+        //这个方法运行在主线程中的，处理具体的逻辑
+        Log.d(TAG, "onReceive: this is " + this.toString() + "in thread " + Thread.currentThread().getName());
+        //超过10秒会ANR
+      /*  try {
+            Thread.sleep(12000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
         Toast.makeText(context.getApplicationContext(), "MyReceiver onReceive", Toast.LENGTH_SHORT).show();
-       // abortBroadcast();
+        // abortBroadcast();
     }
 }
