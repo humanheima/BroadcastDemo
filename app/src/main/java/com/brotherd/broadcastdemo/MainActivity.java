@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction("com.brotherd.broadcastdemo.BROADCAST");
         sendBroadcast(intent);
-        sendOrderedBroadcast(intent, null);
+        //发送有序广播
+        //sendOrderedBroadcast(intent, null);
     }
 
     /**
