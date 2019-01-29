@@ -69,15 +69,11 @@ public class MainActivity extends AppCompatActivity {
     public void sendOrderBroadcast(View view) {
         Intent intent = new Intent();
         intent.setAction("com.brotherd.broadcastdemo.BROADCAST");
+
         IntentFilter filter = new IntentFilter("com.brotherd.broadcastdemo.BROADCAST");
         //指定BroadcastReceiver的工作线程
         registerReceiver(receiver, filter, null, handler);
         sendOrderedBroadcast(intent, null);
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
     }
 
     @Override
