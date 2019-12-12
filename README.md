@@ -73,20 +73,20 @@ LocalBroadcastManager发送的广播只有通过LocalBroadcastManager进行注�
 并且自动触发他的 onReceive() 方法，onReceive() 方法执行完后，BroadcastReceiver 的实例就会被销毁。
 ```
 <receiver
-            android:name=".MyReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <!--指定优先级-->
-            <intent-filter android:priority="100">
-                <action android:name="com.brotherd.broadcastdemo.BROADCAST" />
-            </intent-filter>
-        </receiver>
+        android:name=".MyReceiver"
+        android:enabled="true"
+        android:exported="true">
+        <!--指定优先级-->
+        <intent-filter android:priority="100">
+            <action android:name="com.brotherd.broadcastdemo.BROADCAST" />
+        </intent-filter>
+</receiver>
 ```
 
 *动态注册 只会创建一个BroadcastReceiver实例，要记得在适当的时候解除注册
 ```
- Intent intent = new Intent();
-        intent.setAction("com.brotherd.broadcastdemo.BROADCAST");
-        IntentFilter filter = new IntentFilter("com.brotherd.broadcastdemo.BROADCAST");
-        registerReceiver(receiver, filter);
+Intent intent = new Intent();
+intent.setAction("com.brotherd.broadcastdemo.BROADCAST");
+IntentFilter filter = new IntentFilter("com.brotherd.broadcastdemo.BROADCAST");
+registerReceiver(receiver, filter);
 ```
