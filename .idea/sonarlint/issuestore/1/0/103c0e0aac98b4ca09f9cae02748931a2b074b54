@@ -1,10 +1,0 @@
-
-Rsquid:S1068"/Remove this unused "myReceiver2" private field.(¦ªÎ™úÿÿÿÿ8íšüÞ”-
-nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ÎÞøðýÿÿÿÿ8íšüÞ”-
-ysquid:S1450"[Remove the "intentFilter" field and declare it as a local variable in the relevant methods.(Ò»¯‡8¾ù˜Ý”-
-asquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(€—ë
-Nsquid:S1068"0Remove this unused "intentFilter" private field.(Ò»¯‡8Éº…ß”-
-gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(–èÇŒùÿÿÿÿ
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°¥ˆÊýÿÿÿÿ8˜¿üÞ”-
-rsquid:S1450"URemove the "thread" field and declare it as a local variable in the relevant methods.(â£Ÿ48¾ù˜Ý”-
-squid:S1192"eDefine a constant instead of duplicating this literal "com.brotherd.broadcastdemo.BROADCAST" 5 times.(ßçü¯øÿÿÿÿ
