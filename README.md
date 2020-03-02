@@ -68,6 +68,7 @@ MyReceiver: onReceive: this is com.brotherd.broadcastdemo.MyReceiver@8c8c76ein t
 优先级高的广播接收器先收到广播消息，并且前面的广播接收器可以阶段正再传递的广播，这样后面的广播接收器就无法收到广播消息了。
 3. 本地广播:本地广播只能在应用程序内部进行传递。本地广播通过一个LocalBroadcastManager来对广播进行管理，并提供了发送广播和注册广播接收器的方法。
 LocalBroadcastManager发送的广播只有通过LocalBroadcastManager进行注册广播接收器才能接收到广播。
+4. 粘性广播已经不推荐使用了。
 
 * 静态注册 :每次广播事件到来的时候，系统会创建新的BroadcastReceiver实例，
 并且自动触发他的 onReceive() 方法，onReceive() 方法执行完后，BroadcastReceiver 的实例就会被销毁。
@@ -90,3 +91,5 @@ intent.setAction("com.brotherd.broadcastdemo.BROADCAST");
 IntentFilter filter = new IntentFilter("com.brotherd.broadcastdemo.BROADCAST");
 registerReceiver(receiver, filter);
 ```
+
+
