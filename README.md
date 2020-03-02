@@ -92,4 +92,11 @@ IntentFilter filter = new IntentFilter("com.brotherd.broadcastdemo.BROADCAST");
 registerReceiver(receiver, filter);
 ```
 
+### 广播接收器里面是否可以弹出dialog?
+
+1. 如果广播接收器里面的Context是Activity，是可以正常弹出的。
+
+2. 如果不是Activity，我测试的结果是不可以。
+
+
 
