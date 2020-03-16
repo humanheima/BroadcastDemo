@@ -23,15 +23,15 @@ public class MyReceiver extends BroadcastReceiver {
         Log.d(TAG, "onReceive: context = " + context.toString());
         //这个方法运行在主线程中的，处理具体的逻辑
         Log.d(TAG, "onReceive: this is " + "in thread " + Thread.currentThread().getName());
-        /*try {
+        try {
             Thread.sleep(12000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
         //showDialog(context);
-        showDialog(context);
+        //showDialog(context);
 
-        //Toast.makeText(context.getApplicationContext(), "MyReceiver onReceive", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context.getApplicationContext(), "MyReceiver onReceive", Toast.LENGTH_SHORT).show();
         // abortBroadcast();
     }
 
